@@ -34,10 +34,12 @@ python scraper.py
 
 - Data Loading: The script reads the CSV file containing company names.
 - Data Cleaning: It removes any special characters and non-UTF8 symbols from company names using regex.
-- Web Scraping:
-- A scrape function is defined to make HTTP requests to DuckDuckGo’s HTML interface.
+- Web Scraping: A scrape function is defined to make HTTP requests to DuckDuckGo’s HTML interface.
 - A random User-Agent header is selected for each request to reduce the risk of being blocked.
 - BeautifulSoup parses the HTML response, extracting the first link that matches the result__a class, which represents search result links.
 - Delay Between Requests: The script introduces a random delay between 5-12 seconds after each request to avoid overwhelming the search engine.
 
+## Disclaimer
+
+- This is just a project to explore the limitations of the anti scrapinng mechanisms of most search engines, ethically and legally webscraping can have consequences, I don't encourage webscraping in any form, this whole respository is simply for information purposes only.
 
