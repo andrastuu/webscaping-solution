@@ -6,7 +6,7 @@ from bs4 import BeautifulSoup
 from urllib.parse import quote_plus
 
 # Load your CSV file
-df = pd.read_csv('/Users/macbookpro/Downloads/asd123.csv')
+df = pd.read_csv('('path to your csv file')')
 
 # Clean the company names, removing commas and other non-utf8 encoded symbols
 df['cleaned_company_names'] = df.iloc[:, 0].str.replace('[^a-zA-Z0-9 \n\.]', '', regex=True)
