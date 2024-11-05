@@ -29,6 +29,7 @@ python scraper.py
  URL: https://www.facebook.com
 - Company: Google
  URL: https://www.google.com
+- There is another example in this repository: Results.png
 
 ## Code Explanation
 
@@ -39,6 +40,17 @@ python scraper.py
 - BeautifulSoup parses the HTML response, extracting the first link that matches the result__a class, which represents search result links.
 - Delay Between Requests: The script introduces a random delay between 5-12 seconds after each request to avoid overwhelming the search engine.
 
+## Additional possibilities
+
+- In order to scrape for location specific results, change the search url to : search_url = f"https://html.duckduckgo.com/html/?q={quote_plus(company_name)}&kl={region}"
+
+- Here are some example region codes:
+ - us-en - United States
+ - uk-en - United Kingdom
+ - de-de - Germany
+ - fr-fr - France
+ - jp-ja - Japan
+ - es-es - Spain
 ## Disclaimer
 
 - This is just a project to explore the limitations of the anti scrapinng mechanisms of most search engines, ethically and legally webscraping can have consequences, I don't encourage webscraping in any form, this whole respository is simply for information purposes only.
